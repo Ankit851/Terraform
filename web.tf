@@ -20,7 +20,7 @@ resource "null_resource" "nullremote1" {
 connection {
     type     = "ssh"
     user     = "ec2-user"
-    private_key = file("C:/Users/Lenovo/Downloads/testing.pem")
+    private_key = file("C:/Users/Lenovo/Downloads/Key_pair.pem")
     host     = aws_instance.web.public_ip
   }
 
@@ -60,7 +60,7 @@ resource "null_resource"  "nullremote2" {
 connection {
     type     = "ssh"
     user     = "ec2-user"
-    private_key = file("C:/Users/Lenovo/Downloads/testing.pem")
+    private_key = file("C:/Users/Lenovo/Downloads/Key_pair.pem")
     host     = aws_instance.web.public_ip
   }
 
@@ -80,7 +80,7 @@ resource "null_resource"  "nullremote9" {
 connection {
     type     = "ssh"
     user     = "ec2-user"
-    private_key = file("C:/Users/Lenovo/Downloads/testing.pem")
+    private_key = file("C:/Users/Lenovo/Downloads/Key_pair.pem")
     host     = aws_instance.web.public_ip
   }
 
